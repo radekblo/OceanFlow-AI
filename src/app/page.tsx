@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Waves } from "lucide-react";
@@ -21,7 +22,7 @@ export default function HomePage() {
             Transform complex strategic planning into an intuitive, AI-powered experience. 
             Leverage Google's Gemini API to uncover market insights, design innovative value curves, and craft your winning strategy.
           </p>
-          <Link href="/market-analyzer" legacyBehavior>
+          <Link href="/market-analyzer">
             <Button size="lg" className="font-semibold text-lg px-8 py-6">
               Start Exploring
             </Button>
