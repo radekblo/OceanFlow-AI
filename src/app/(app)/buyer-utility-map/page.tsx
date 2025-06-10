@@ -16,6 +16,7 @@ import {
   DialogFooter,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { Label } from "@/components/ui/label";
 
 const buyerExperienceCycle = [
   "Purchase",
