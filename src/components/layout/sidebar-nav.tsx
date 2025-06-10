@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -29,16 +30,16 @@ export function SidebarNav() {
     <SidebarMenu className="p-2">
       {navItems.map((item) => (
         <SidebarMenuItem key={item.href}>
-          <Link href={item.href} passHref legacyBehavior>
+          <Link href={item.href}>
             <SidebarMenuButton
               asChild
               isActive={pathname.startsWith(item.href)}
               tooltip={{ children: item.tooltip, className: 'capitalize' }}
             >
-              <a>
+              <>
                 <item.icon />
                 <span>{item.label}</span>
-              </a>
+              </>
             </SidebarMenuButton>
           </Link>
         </SidebarMenuItem>
