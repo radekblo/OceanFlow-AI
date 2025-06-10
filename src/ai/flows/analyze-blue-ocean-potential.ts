@@ -1,3 +1,4 @@
+
 'use server';
 
 /**
@@ -21,8 +22,7 @@ export type AnalyzeBlueOceanPotentialInput = z.infer<typeof AnalyzeBlueOceanPote
 const AnalyzeBlueOceanPotentialOutputSchema = z.object({
   differentiationFeedback: z.string().describe('Feedback on the differentiation of the strategy compared to existing market offerings.'),
   focusFeedback: z.string().describe('Feedback on the focus of the strategy on non-customers and new market creation.'),
-  valueInnovationFeedback: z.string().describe('Feedback on the sustainability of the value innovation.
-'),
+  valueInnovationFeedback: z.string().describe('Feedback on the sustainability of the value innovation.'),
   feasibilityFeedback: z.string().describe('Feedback on the feasibility of implementing the strategy.'),
 });
 export type AnalyzeBlueOceanPotentialOutput = z.infer<typeof AnalyzeBlueOceanPotentialOutputSchema>;
