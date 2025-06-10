@@ -30,18 +30,16 @@ export function SidebarNav() {
     <SidebarMenu className="p-2">
       {navItems.map((item) => (
         <SidebarMenuItem key={item.href}>
-          <Link href={item.href}>
-            <SidebarMenuButton
-              asChild
-              isActive={pathname.startsWith(item.href)}
-              tooltip={{ children: item.tooltip, className: 'capitalize' }}
-            >
-              <>
-                <item.icon />
-                <span>{item.label}</span>
-              </>
-            </SidebarMenuButton>
-          </Link>
+          <SidebarMenuButton
+            asChild
+            isActive={pathname.startsWith(item.href)}
+            tooltip={{ children: item.tooltip, className: 'capitalize' }}
+          >
+            <Link href={item.href}>
+              <item.icon />
+              <span>{item.label}</span>
+            </Link>
+          </SidebarMenuButton>
         </SidebarMenuItem>
       ))}
     </SidebarMenu>
